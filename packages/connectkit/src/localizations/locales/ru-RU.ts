@@ -39,14 +39,15 @@ const ruRU: LocaleProps = {
   warnings_chainUnsupported: `Это приложение не поддерживает текущую подключенную сеть.`,
   warnings_chainUnsupportedResolve: `Для продолжения переключите сеть или отключите кошелек.`,
 
-  onboardingScreen_heading: `Завести кошелек`,
+  onboardingScreen_heading: `Выберите web3-кошелек`,
   onboardingScreen_h1: `Начните исследовать веб3`,
   onboardingScreen_p: `Ваш кошелек — это врата в мир Ethereum, волшебной технологии, которая позволяет исследовать веб3.`,
-  onboardingScreen_ctaText: `Выбрать свой первый кошелек`,
+  onboardingScreen_passkeysText: `Продолжить с ключами доступа`,
+  onboardingScreen_ctaText: `Другие кошельки`,
   onboardingScreen_ctaUrl: `https://ethereum.org/en/wallets/find-wallet/`,
 
   aboutScreen_heading: `О кошельках`,
-    aboutScreen_a_h1: `Для ваших цифровых активов`,
+  aboutScreen_a_h1: `Для ваших цифровых активов`,
   aboutScreen_a_p: `Кошельки позволяют вам отправлять, получать, хранить и взаимодействовать с цифровыми активами, такими как NFT и другие токены Ethereum.`,
   aboutScreen_b_h1: `Лучший способ входа`,
   aboutScreen_b_p: `В современных приложениях ваш кошелек можно использовать как удобный способ входа без необходимости помнить пароль.`,

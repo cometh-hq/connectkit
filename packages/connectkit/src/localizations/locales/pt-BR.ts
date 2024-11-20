@@ -40,10 +40,11 @@ const ptBR: LocaleProps = {
   warnings_chainUnsupported: `Este aplicativo não é compatível com a rede conectada.`,
   warnings_chainUnsupportedResolve: `Altere a rede ou desconecte para continuar.`,
 
-  onboardingScreen_heading: `Obtenha uma carteira`,
+  onboardingScreen_heading: `Escolha a carteira web3`,
   onboardingScreen_h1: `Comece a explorar a Web3`,
   onboardingScreen_p: `Sua carteira é a porta de entrada para todas as coisas Ethereum, a tecnologia mágica que torna possível explorar a web3.`,
-  onboardingScreen_ctaText: `Escolha sua primeira carteira`,
+  onboardingScreen_passkeysText: `Continuar com passkeys`,
+  onboardingScreen_ctaText: `Outras carteiras`,
   onboardingScreen_ctaUrl: `https://ethereum.org/pt-br/wallets/find-wallet/`,
 
   aboutScreen_heading: `Sobre as carteiras`,
@@ -101,16 +102,19 @@ const ptBR: LocaleProps = {
 
   switchNetworkScreen_heading: 'Alternar rede',
 
-  signInWithEthereumScreen_tooltip: 'Você não está conectado a este aplicativo.\n**Entre com Ethereum** para continuar.',
+  signInWithEthereumScreen_tooltip:
+    'Você não está conectado a este aplicativo.\n**Entre com Ethereum** para continuar.',
   signInWithEthereumScreen_signedOut_heading: 'Entrar com Ethereum',
-  signInWithEthereumScreen_signedOut_h1: 'Este aplicativo gostaria de verificar você \n como o proprietário desta carteira.',
+  signInWithEthereumScreen_signedOut_h1:
+    'Este aplicativo gostaria de verificar você \n como o proprietário desta carteira.',
   signInWithEthereumScreen_signedOut_p: `Por favor, assine o pedido de mensagem \n em sua carteira para continuar.`,
   signInWithEthereumScreen_signedOut_button: 'Entrar',
 
   signInWithEthereumScreen_signedIn_heading: 'Conectado com Ethereum',
-  signInWithEthereumScreen_signedIn_h1: 'Você se verificou com sucesso \n como o proprietário desta carteira',
+  signInWithEthereumScreen_signedIn_h1:
+    'Você se verificou com sucesso \n como o proprietário desta carteira',
   signInWithEthereumScreen_signedIn_p: `Se sair, será necessário que você \n autentique novamente no futuro.`,
-  signInWithEthereumScreen_signedIn_button: 'Sair'
+  signInWithEthereumScreen_signedIn_button: 'Sair',
 };
 
 export default ptBR;

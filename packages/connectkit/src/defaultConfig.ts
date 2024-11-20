@@ -4,6 +4,7 @@ import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
 import { CoinbaseWalletParameters } from 'wagmi/connectors';
 
 import defaultConnectors from './defaultConnectors';
+import { ComethConnectorOptions } from '@cometh/hosted-sdk';
 
 // TODO: Move these to a provider rather than global variable
 let globalAppName: string;
@@ -21,6 +22,7 @@ type DefaultConfigProps = {
   walletConnectProjectId: string;
   // Coinbase Wallet preference
   coinbaseWalletPreference?: CoinbaseWalletParameters<'4'>['preference'];
+  comethWalletPreference?: ComethConnectorOptions;
 } & Partial<CreateConfigParameters>;
 
 const defaultConfig = ({
@@ -30,7 +32,8 @@ const defaultConfig = ({
   appUrl,
   walletConnectProjectId,
   coinbaseWalletPreference,
-  chains = [mainnet, polygon, optimism, arbitrum],
+  comethWalletPreference,
+  chains = [arbitrum],
   client,
   ...props
 }: DefaultConfigProps): CreateConfigParameters => {
@@ -53,6 +56,7 @@ const defaultConfig = ({
       },
       walletConnectProjectId,
       coinbaseWalletPreference,
+      comethWalletPreference,
     });
 
   const config: CreateConfigParameters<any, any> = {

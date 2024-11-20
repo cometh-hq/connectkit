@@ -342,8 +342,6 @@ const Modal: React.FC<ModalProps> = ({
         return locales.mobileConnectorsScreen_heading;
       case routes.DOWNLOAD:
         return locales.downloadAppScreen_heading;
-      case routes.ONBOARDING:
-        return locales.onboardingScreen_heading;
       case routes.PROFILE:
         return locales.profileScreen_heading;
       case routes.SWITCHNETWORKS:

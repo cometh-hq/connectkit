@@ -9,6 +9,7 @@ import ConnectWithQRCode from './ConnectWithQRCode';
 
 import { contentVariants } from '../Common/Modal';
 import Alert from '../Common/Alert';
+import { isComethWalletConnector } from '../../utils';
 
 const states = {
   QRCODE: 'qrcode',
@@ -20,7 +21,10 @@ const ConnectUsing = () => {
   const wallet = useWallet(context.connector.id);
 
   // If cannot be scanned, display injector flow, which if extension is not installed will show CTA to install it
-  const isQrCode = !wallet?.isInstalled && wallet?.getWalletConnectDeeplink;
+  const isQrCode =
+    !wallet?.isInstalled &&
+    wallet?.getWalletConnectDeeplink &&
+    !isComethWalletConnector(wallet?.connector.id);
 
   const [status, setStatus] = useState(
     isQrCode ? states.QRCODE : states.INJECTOR

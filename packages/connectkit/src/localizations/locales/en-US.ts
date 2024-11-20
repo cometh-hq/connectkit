@@ -37,10 +37,11 @@ const enUS = {
   warnings_chainUnsupported: `This app does not support the current connected network.`,
   warnings_chainUnsupportedResolve: `Switch or disconnect to continue.`,
 
-  onboardingScreen_heading: `Get a Wallet`,
+  onboardingScreen_heading: `Choose web3 wallet`,
   onboardingScreen_h1: `Start Exploring Web3`,
   onboardingScreen_p: `Your wallet is the gateway to all things Ethereum, the magical technology that makes it possible to explore web3.`,
-  onboardingScreen_ctaText: `Choose Your First Wallet`,
+  onboardingScreen_passkeysText: `Continue with passkeys`,
+  onboardingScreen_ctaText: `Other wallets`,
   onboardingScreen_ctaUrl: `https://ethereum.org/en/wallets/find-wallet/`,
 
   aboutScreen_heading: `About Wallets`,

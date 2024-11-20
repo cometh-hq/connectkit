@@ -5,8 +5,13 @@ import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
 export const config = createConfig(
   getDefaultConfig({
     appName: 'ConnectKit Next.js demo',
-    chains: [mainnet, polygon, optimism, arbitrum],
+    chains: [optimism, arbitrum, mainnet, polygon],
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
+    // comethWalletPreference: {
+    //   configuration: {
+    //     oidcAppURI: 'http://localhost:3000',
+    //   },
+    // },
   })
 );
 

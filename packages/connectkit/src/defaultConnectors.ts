@@ -6,6 +6,10 @@ import {
   CoinbaseWalletParameters,
   safe,
 } from '@wagmi/connectors';
+import {
+  comethConnectConnector,
+  ComethConnectorOptions,
+} from '@cometh/hosted-sdk';
 
 type DefaultConnectorsProps = {
   app: {
@@ -16,12 +20,14 @@ type DefaultConnectorsProps = {
   };
   walletConnectProjectId?: string;
   coinbaseWalletPreference?: CoinbaseWalletParameters<'4'>['preference'];
+  comethWalletPreference?: ComethConnectorOptions;
 };
 
 const defaultConnectors = ({
   app,
   walletConnectProjectId,
   coinbaseWalletPreference,
+  comethWalletPreference,
 }: DefaultConnectorsProps): CreateConnectorFn[] => {
   const hasAllAppData = app.name && app.icon && app.description && app.url;
   const shouldUseSafeConnector =
@@ -46,6 +52,9 @@ const defaultConnectors = ({
       appLogoUrl: app.icon,
       overrideIsMetaMask: false,
       preference: coinbaseWalletPreference,
+    }),
+    comethConnectConnector({
+      configuration: comethWalletPreference?.configuration,
     })
   );
 

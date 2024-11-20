@@ -19,11 +19,11 @@ const themeGlobals = {
   },
   graphics: {
     light: {
-      '--ck-graphic-wave-stop-01': '#E8F17D',
-      '--ck-graphic-wave-stop-02': '#A8ECDE',
-      '--ck-graphic-wave-stop-03': '#7AA1F2',
-      '--ck-graphic-wave-stop-04': '#DEA1E8',
-      '--ck-graphic-wave-stop-05': '#F46D98',
+      '--ck-graphic-wave-stop-01': '#FFF2E6',
+      '--ck-graphic-wave-stop-02': '#F4EBF2',
+      '--ck-graphic-wave-stop-03': '#E9E5FE',
+      '--ck-graphic-wave-stop-04': '#E5E8FE',
+      '--ck-graphic-wave-stop-05': '#E1ECFE',
 
       '--ck-graphic-scaniconwithlogos-01': '#4E4E4E',
       '--ck-graphic-scaniconwithlogos-02': '#272727',
@@ -35,11 +35,11 @@ const themeGlobals = {
       '--ck-chain-ethereum-03': '#DFE0E0',
     },
     dark: {
-      '--ck-graphic-wave-stop-01': '#E8F17D',
-      '--ck-graphic-wave-stop-02': '#A8ECDE',
-      '--ck-graphic-wave-stop-03': '#7AA1F2',
-      '--ck-graphic-wave-stop-04': '#DEA1E8',
-      '--ck-graphic-wave-stop-05': '#F46D98',
+      '--ck-graphic-wave-stop-01': '#FFF2E6',
+      '--ck-graphic-wave-stop-02': '#F4EBF2',
+      '--ck-graphic-wave-stop-03': '#E9E5FE',
+      '--ck-graphic-wave-stop-04': '#E5E8FE',
+      '--ck-graphic-wave-stop-05': '#E1ECFE',
 
       '--ck-graphic-scaniconwithlogos-01': '#AFAFAF',
       '--ck-graphic-scaniconwithlogos-02': '#696969',

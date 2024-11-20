@@ -39,10 +39,11 @@ const esES: LocaleProps = {
   warnings_chainUnsupported: `Esta aplicación no es compatible con la red conectada actualmente.`,
   warnings_chainUnsupportedResolve: `Cambia o desconecta para continuar.`,
 
-  onboardingScreen_heading: `Obtén una cartera`,
+  onboardingScreen_heading: `Elige cartera web3`,
   onboardingScreen_h1: `Comienza a explorar la Web3`,
   onboardingScreen_p: `Tu cartera es el portal de acceso a todo lo relacionado con Ethereum, la tecnología mágica que permite explorar la Web3.`,
-  onboardingScreen_ctaText: `Elige tu primera cartera`,
+  onboardingScreen_passkeysText: `Continuar con claves de paso`,
+  onboardingScreen_ctaText: `Otras carteras`,
   onboardingScreen_ctaUrl: `https://ethereum.org/es/wallets/find-wallet/`,
 
   aboutScreen_heading: `Acerca de las carteras`,

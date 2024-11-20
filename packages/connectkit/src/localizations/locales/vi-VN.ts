@@ -39,10 +39,11 @@ const viVN: LocaleProps = {
   warnings_chainUnsupported: `Ứng dụng này không hỗ trợ mạng hiện tại.`,
   warnings_chainUnsupportedResolve: `Đổi hoặc ngắt kết nối để tiếp tục.`,
 
-  onboardingScreen_heading: `Tạo một ví`,
+  onboardingScreen_heading: `Chọn ví web3`,
   onboardingScreen_h1: `Bắt đầu khám khá Web3`,
   onboardingScreen_p: `Ví của bạn là cổng giao tiếp mọi thứ trên Ethereum, công nghệ tuyệt vời giúp khám phá Web3.`,
-  onboardingScreen_ctaText: `Chọn ví đầu tiên của bạn`,
+  onboardingScreen_passkeysText: `Tiếp tục với passkey`,
+  onboardingScreen_ctaText: `Ví khác`,
   onboardingScreen_ctaUrl: `https://ethereum.org/en/wallets/find-wallet/`,
 
   aboutScreen_heading: `Giới thiệu các ví`,

@@ -3,7 +3,11 @@ import { Connector } from 'wagmi';
 import { useConnectors } from '../hooks/useConnectors';
 import { walletConfigs, WalletConfigProps } from './walletConfigs';
 import { useContext } from '../components/ConnectKit';
-import { isCoinbaseWalletConnector, isInjectedConnector } from '../utils';
+import {
+  isCoinbaseWalletConnector,
+  isComethWalletConnector,
+  isInjectedConnector,
+} from '../utils';
 
 export type WalletProps = {
   id: string;
@@ -32,6 +36,8 @@ export const useWallets = (): WalletProps[] => {
           .indexOf(connector.id) !== -1
     );
 
+    console.log('connector', connector);
+
     const c: WalletProps = {
       id: connector.id,
       name: connector.name ?? connector.id ?? connector.type,
@@ -48,7 +54,8 @@ export const useWallets = (): WalletProps[] => {
       isInstalled:
         connector.type === 'mock' ||
         (connector.type === 'injected' && connector.id !== 'metaMask') ||
-        isCoinbaseWalletConnector(connector.id), // always run coinbase wallet SDK
+        isCoinbaseWalletConnector(connector.id) || // always run coinbase wallet SDK
+        isComethWalletConnector(connector.id), // always run cometh wallet SDK
     };
 
     if (walletId) {

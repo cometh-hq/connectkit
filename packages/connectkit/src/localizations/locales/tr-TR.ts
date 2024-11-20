@@ -16,7 +16,7 @@ const trTR: LocaleProps = {
   more: 'Daha Fazla',
   tryAgain: 'Tekrar Dene',
   tryAgainQuestion: 'Tekrar Dene?',
-  dontHaveTheApp: "Uygulaman yok mu?",
+  dontHaveTheApp: 'Uygulaman yok mu?',
   scanTheQRCode: 'Karekodu tarat',
   useWalletConnectModal: 'WalletConnect Modalini Kullan ',
   useModal: 'Modal Kullan',
@@ -39,10 +39,11 @@ const trTR: LocaleProps = {
   warnings_chainUnsupported: `Bu uygulama kullanmış olduğunuz ağı desteklemiyor.`,
   warnings_chainUnsupportedResolve: `Devam etmek için ağ değiştir veya bağlantıyı kes.`,
 
-  onboardingScreen_heading: `Cüzdan Al`,
+  onboardingScreen_heading: `Web3 cüzdanını seçin`,
   onboardingScreen_h1: `Web3\'ü keşfetmeye başla`,
   onboardingScreen_p: `Cüzdanınız, Web3'ü keşfetmeyi mümkün kılan sihirli teknoloji olan Ethereum'a açılan kapıdır.`,
-  onboardingScreen_ctaText: `İlk Cüzdanını Seç`,
+  onboardingScreen_passkeysText: `Geçiş anahtarlarıyla devam et`,
+  onboardingScreen_ctaText: `Diğer cüzdanlar`,
   onboardingScreen_ctaUrl: `https://ethereum.org/tr/wallets/find-wallet/`,
 
   aboutScreen_heading: `Cüzdanlar Hakkında`,
@@ -74,7 +75,6 @@ const trTR: LocaleProps = {
 
   injectionScreen_unavailable_h1: `Desteklenmeyen Tarayıcı`,
   injectionScreen_unavailable_p: `{{ CONNECTORSHORTNAME }} cüzdanına bağlanmak için\n{{ SUGGESTEDEXTENSIONBROWSER }} üzerinde indirmen gerekiyor.`,
-  
 
   injectionScreen_install_h1: `{{ CONNECTORNAME }} İndir`,
   injectionScreen_install_p: `{{ CONNECTORSHORTNAME }} cüzdanına bağlanmak için,\ntarayıcı eklentisini indir.`,

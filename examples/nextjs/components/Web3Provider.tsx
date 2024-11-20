@@ -8,6 +8,11 @@ const config = createConfig(
   getDefaultConfig({
     appName: 'ConnectKit Next.js demo',
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID!,
+    // comethWalletPreference: {
+    //   configuration: {
+    //     oidcAppURI: 'http://localhost:3000',
+    //   },
+    // },
   })
 );
 

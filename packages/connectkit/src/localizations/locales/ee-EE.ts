@@ -43,6 +43,7 @@ const eeEE: LocaleProps = {
   onboardingScreen_h1: `Alustage Web3 uurimist`,
   onboardingScreen_p: `Teie rahakott on värav kõigele, mis puudutab Ethereumit, maagilist tehnoloogiat, mis võimaldab uurida Web3.`,
   onboardingScreen_ctaText: `Valige oma esimene rahakott`,
+  onboardingScreen_passkeysText: `Valige oma esimene rahakott`,
   onboardingScreen_ctaUrl: `https://ethereum.org/en/wallets/find-wallet/`,
 
   aboutScreen_heading: `Rahakottidest`,

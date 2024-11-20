@@ -39,10 +39,11 @@ const faIR: LocaleProps = {
   warnings_chainUnsupported: `این برنامه با شبکه‌ای که در حال حاضر متصل است، سازگاری ندارد.`,
   warnings_chainUnsupportedResolve: `برای ادامه، شبکه را تغییر دهید یا اتصال را قطع کنید.`,
 
-  onboardingScreen_heading: `دریافت کیف پول`,
+  onboardingScreen_heading: `انتخاب کیف پول web3`,
   onboardingScreen_h1: `آغاز کاوش در وب3`,
   onboardingScreen_p: `کیف پول شما دروازه‌ای است به دنیای اتریوم، فناوری جادویی که ممکن می‌سازد تا وب3 را کاوش کنید.`,
-  onboardingScreen_ctaText: `کیف پول نخست خود را انتخاب کنید`,
+  onboardingScreen_ctaText: `کیف پول‌های دیگر`,
+  onboardingScreen_passkeysText: `ادامه با کلیدهای عبور`,
   onboardingScreen_ctaUrl: `https://ethereum.org/fa/wallets/find-wallet/`,
 
   aboutScreen_heading: `درباره کیف پول‌ها`,

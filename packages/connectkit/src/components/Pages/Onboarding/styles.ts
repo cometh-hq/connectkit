@@ -6,12 +6,12 @@ import defaultTheme from '../../../constants/defaultTheme';
 export const Graphic = styled(motion.div)`
   position: relative;
   margin: 16px auto 20px;
-  height: 190px;
+  height: 110px;
   max-width: 295px;
   pointer-events: none;
   user-select: none;
   @media only screen and (max-width: ${defaultTheme.mobileWidth}px) {
-    height: 200px;
+    height: 70px;
     max-width: 100%;
     margin-bottom: 32px;
   }
@@ -118,23 +118,56 @@ export const Logo = styled(motion.div)`
   inset: 0;
 
   animation: ${logoIn} 750ms cubic-bezier(0.19, 1, 0.22, 1) both;
-  &:nth-child(1){ z-index:2; animation-delay:0ms;  }
-  &:nth-child(2){ z-index:1; animation-delay:60ms; }
-  &:nth-child(3){ z-index:1; animation-delay:30ms; }
-  &:nth-child(4){ z-index:1; animation-delay:90ms; }
-  &:nth-child(5){ z-index:1; animation-delay:120ms;}
+  &:nth-child(1) {
+    z-index: 2;
+    animation-delay: 0ms;
+  }
+  /* &:nth-child(2){ z-index:1; animation-delay:60ms; } */
+  /* &:nth-child(3){ z-index:1; animation-delay:30ms; } */
+  &:nth-child(2) {
+    z-index: 1;
+    animation-delay: 90ms;
+  }
+  &:nth-child(3) {
+    z-index: 1;
+    animation-delay: 120ms;
+  }
 
-  &:nth-child(1){ ${RotateWrapper}{ animation-delay:0ms; } }
-  &:nth-child(2){ ${RotateWrapper}{ animation-delay:-600ms; } }
-  &:nth-child(3){ ${RotateWrapper}{ animation-delay:-1200ms; } }
-  &:nth-child(4){ ${RotateWrapper}{ animation-delay:-1800ms; } }
-  &:nth-child(5){ ${RotateWrapper}{ animation-delay:-2400ms; } }
+  &:nth-child(1) {
+    ${RotateWrapper} {
+      animation-delay: 0ms;
+    }
+  }
+  /* &:nth-child(2){ ${RotateWrapper}{ animation-delay:-600ms; } } */
+  /* &:nth-child(3){ ${RotateWrapper}{ animation-delay:-1200ms; } } */
+  &:nth-child(2) {
+    ${RotateWrapper} {
+      animation-delay: -1800ms;
+    }
+  }
+  &:nth-child(3) {
+    ${RotateWrapper} {
+      animation-delay: -2400ms;
+    }
+  }
 
-  &:nth-child(1){ ${FloatWrapper}{ animation-delay:-200ms; } }
-  &:nth-child(2){ ${FloatWrapper}{ animation-delay:-600ms; } }
-  &:nth-child(3){ ${FloatWrapper}{ animation-delay:-800ms; } }
-  &:nth-child(4){ ${FloatWrapper}{ animation-delay:-300ms; } }
-  &:nth-child(5){ ${FloatWrapper}{ animation-delay:-3200ms; } }
+  &:nth-child(1) {
+    ${FloatWrapper} {
+      animation-delay: -200ms;
+    }
+  }
+  /* &:nth-child(2){ ${FloatWrapper}{ animation-delay:-600ms; } } */
+  /* &:nth-child(3){ ${FloatWrapper}{ animation-delay:-800ms; } } */
+  &:nth-child(2) {
+    ${FloatWrapper} {
+      animation-delay: -300ms;
+    }
+  }
+  &:nth-child(3) {
+    ${FloatWrapper} {
+      animation-delay: -3200ms;
+    }
+  }
 
   @media only screen and (max-width: ${defaultTheme.mobileWidth}px) {
     animation: none !important;
@@ -148,23 +181,23 @@ export const Logo = styled(motion.div)`
   }
 
   &:nth-child(1) ${LogoPosition} {
-    transform: translate(50%, 50%);
+    transform: translate(50%, 16%);
     ${LogoGraphic} {
       border-radius: 17.2px;
       width: 72px;
       height: 72px;
     }
   }
-  &:nth-child(2) ${LogoPosition} {
+  /* &:nth-child(2) ${LogoPosition} {
     transform: translate(21%, 21.5%);
   }
   &:nth-child(3) ${LogoPosition} {
     transform: translate(78%, 14%);
+  } */
+  &:nth-child(2) ${LogoPosition} {
+    transform: translate(22.5%, 54%);
   }
-  &:nth-child(4) ${LogoPosition} {
-    transform: translate(22.5%, 76%);
-  }
-  &:nth-child(5) ${LogoPosition} {
-    transform: translate(76%, 80%);
+  &:nth-child(3) ${LogoPosition} {
+    transform: translate(76%, 47%);
   }
 `;

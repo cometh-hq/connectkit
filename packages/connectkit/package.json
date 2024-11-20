@@ -1,6 +1,6 @@
 {
-  "name": "connectkit",
-  "version": "1.8.2",
+  "name": "@cometh/homestead",
+  "version": "1.8.2-homestead.4",
   "author": "Family",
   "homepage": "https://docs.family.co/connectkit",
   "license": "BSD-2-Clause license",
@@ -39,6 +39,7 @@
     "react"
   ],
   "dependencies": {
+    "@cometh/hosted-sdk": "0.3.2",
     "buffer": "^6.0.3",
     "detect-browser": "^5.3.0",
     "framer-motion": "^6.3.11",

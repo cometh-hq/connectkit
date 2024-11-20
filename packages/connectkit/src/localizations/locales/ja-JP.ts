@@ -37,10 +37,11 @@ export default {
   warnings_chainUnsupported: `このアプリは、現在接続されているネットワークをサポートしていません。`,
   warnings_chainUnsupportedResolve: `切り替えるか切断して続行します。`,
 
-  onboardingScreen_heading: `ウォレットを入手`,
+  onboardingScreen_heading: `web3ウォレットを選択`,
   onboardingScreen_h1: `Web3 の探索を開始`,
   onboardingScreen_p: `ウォレットは、web3 の探索を可能にする魔法のテクノロジーであるイーサリアムのすべてへのゲートウェイです。`,
-  onboardingScreen_ctaText: `最初のウォレットを選択してください`,
+  onboardingScreen_ctaText: `その他のウォレット`,
+  onboardingScreen_passkeysText: `パスキーで続行`,
   onboardingScreen_ctaUrl: `https://ethereum.org/ja/wallets/find-wallet/`,
 
   aboutScreen_heading: `ウォレットについて`,

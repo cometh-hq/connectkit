@@ -39,10 +39,11 @@ const frFR: LocaleProps = {
   warnings_chainUnsupported: `Cette application ne prend pas en charge le réseau connecté actuel.`,
   warnings_chainUnsupportedResolve: `Changez ou déconnectez-vous pour continuer.`,
 
-  onboardingScreen_heading: `Obtenez un portefeuille`,
+  onboardingScreen_heading: `Choisir un wallet web3`,
   onboardingScreen_h1: `Commencez à explorer le Web3`,
   onboardingScreen_p: `Votre portefeuille est la porte d'entrée vers tout ce qui concerne l'Ethereum, la technologie magique qui permet d'explorer le Web3.`,
-  onboardingScreen_ctaText: `Choisissez votre premier portefeuille`,
+  onboardingScreen_passkeysText: `Continuer avec les passkeys`,
+  onboardingScreen_ctaText: `Autres wallets (avancé)`,
   onboardingScreen_ctaUrl: `https://ethereum.org/fr/wallets/find-wallet/`,
 
   aboutScreen_heading: `À propos des portefeuilles`,

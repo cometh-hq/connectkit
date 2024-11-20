@@ -39,10 +39,11 @@ const zhCN: LocaleProps = {
   warnings_chainUnsupported: `此应用不支持当前连接的网络。`,
   warnings_chainUnsupportedResolve: `请切换网络或断开连接以继续。`,
 
-  onboardingScreen_heading: `获取钱包`,
+  onboardingScreen_heading: `选择 web3 钱包`,
   onboardingScreen_h1: `开始探索 Web3`,
   onboardingScreen_p: `您的钱包是通往以太坊的一扇大门，而以太坊是探索 Web3 的一项神奇技术。`,
-  onboardingScreen_ctaText: `选择您的第一钱包`,
+  onboardingScreen_passkeysText: `使用通行密钥继续`,
+  onboardingScreen_ctaText: `其他钱包`,
   onboardingScreen_ctaUrl: `https://ethereum.org/zh/wallets/find-wallet/`,
 
   aboutScreen_heading: `关于钱包`,

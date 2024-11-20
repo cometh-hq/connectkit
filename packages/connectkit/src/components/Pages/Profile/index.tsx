@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useContext } from '../../ConnectKit';
 import {
+  isComethWalletConnector,
   isSafeConnector,
   nFormatter,
   truncateEthAddress,
@@ -33,12 +34,13 @@ import Button from '../../Common/Button';
 import Avatar from '../../Common/Avatar';
 import ChainSelector from '../../Common/ChainSelect';
 
-import { DisconnectIcon } from '../../../assets/icons';
+import { DisconnectIcon, ExternalLinkIcon } from '../../../assets/icons';
 import CopyToClipboard from '../../Common/CopyToClipboard';
 import { AnimatePresence } from 'framer-motion';
 import { useThemeContext } from '../../ConnectKitThemeProvider/ConnectKitThemeProvider';
 import useLocales from '../../../hooks/useLocales';
 import { useEnsFallbackConfig } from '../../../hooks/useEnsFallbackConfig';
+import { useWalletOverview } from '../../../hooks/useWalletOverview';
 
 const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
   const context = useContext();
@@ -48,6 +50,7 @@ const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
 
   const { reset } = useConnect();
   const { disconnect } = useDisconnect();
+  const { openUrl } = useWalletOverview();
 
   const { address, isConnected, connector, chain } = useAccount();
   const ensFallbackConfig = useEnsFallbackConfig();
@@ -135,6 +138,11 @@ const Profile: React.FC<{ closeModal?: () => void }> = ({ closeModal }) => {
           </ModalBody>
         )}
       </ModalContent>
+      {isComethWalletConnector(connector?.id) && (
+        <Button onClick={openUrl} icon={<ExternalLinkIcon />}>
+          Wallet overview
+        </Button>
+      )}
       {!isSafeConnector(connector?.id) && (
         <Button
           onClick={() => setShouldDisconnect(true)}
